@@ -241,6 +241,55 @@ nav>span {
 }
 
 
+/* Exercises-container Styling */
+.Exercises-title {
+    max-width: 1060px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.Exercises-title h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.Exercises-title p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #808080;
+    margin-top: 14px;
+}
+
+
+.Exercises-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2, 200px;
+    max-width: 1060px;
+    margin: 0 auto;
+    max-height: 403px;
+    margin-top: 58px;
+
+}
+
+.Exercises-container img {
+    width: 100%;
+    height: 201px;
+    mix-blend-mode: multiply;
+}
+
+/* .img-2 {
+    grid-column: span 2;
+}
+
+.img-4 {
+    grid-column: span 2;
+} */
+.img-5{
+    grid-column: span 2;
+}
+
 
 
 
@@ -306,13 +355,41 @@ nav>span {
     }
 
     .btn-primary {
-        margin-left: 70px;
+        margin-left: 100px;
+
     }
 
     .run-images img {
-        margin: 0px 5px;
+        margin: 0px auto;
 
     }
 
+    /* Exercises-container Responsive */
+
+    .Exercises-container .exxercises-box:nth-child(3),.Exercises-container .exxercises-box:nth-child(6) {
+        display: none;
+    }
+
+    .Exercises-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+/* 
+    .img-3 {
+        display: none;
+    }
+
+    .img-6 {
+        display: none;
+    }
+
+    .img-2 {
+        grid-column: auto;
+    }
+
+    .img-4 {
+        grid-column: auto;
+    } */
 
 }
